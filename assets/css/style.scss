@@ -1,0 +1,163 @@
+@use "sass:map";
+
+$font-family: "Helvetica";
+
+$colors: (
+  "darkblue5": #091b6f,
+  "darkblue4": #0d28a6,
+  "darkblue3": #091b6f,
+  "darkblue2": #aeb7e1,
+  "darkblue1": #cfd4ed,
+  "limegreen5": #5cb85f,
+  "limegreen4": #5cb85f,
+  "limegreen3": #92d094,
+  "limegreen2": #c9e7ca,
+  "limegreen1": #def1df,
+  "yellow1": #f9cc00,
+);
+
+$alert: (
+  "danger": #fa2c5a,
+  "warning": #f9cc00,
+  "success": #73ca5c,
+);
+
+$background: (
+  "white1": #ffffff,
+  "white2": #f1f3ff,
+);
+
+html {
+  font-family: $font-family;
+}
+
+.navbar-collapse {
+  justify-content: end !important;
+}
+
+.colors {
+  &-darkblue5 {
+    background-color: map.get($colors, "darkblue5");
+  }
+  &-darkblue4 {
+    background-color: map.get($colors, "darkblue4");
+  }
+  &-darkblue3 {
+    background-color: map.get($colors, "darkblue3");
+  }
+  &-darkblue2 {
+    background-color: map.get($colors, "darkblue2");
+  }
+  &-darkblue1 {
+    background-color: map.get($colors, "darkblue1");
+  }
+}
+
+#hero {
+  height: 504px;
+  background-color: map.get($background, "white2");
+}
+
+.hero {
+  &-right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+
+  &-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+  }
+
+  &-shape {
+    position: absolute;
+    width: 704px;
+    height: 243px;
+    right: -110px;
+    bottom: 0px;
+    background: map.get($colors, "darkblue5");
+    border-radius: 60px 0px 0px 0px;
+    z-index: 0;
+  }
+
+  &-img {
+    position: absolute;
+    z-index: 1;
+    right: -120px;
+    bottom: 40px;
+  }
+}
+
+#our-service {
+  background-color: map.get($background, "white1");
+}
+
+.service {
+  &-item {
+    height: 428px;
+    padding: 60px 40px;
+  }
+
+  &-img {
+    position: absolute;
+    width: 374px;
+    height: 366px;
+    left: 99px;
+    top: 0px;
+    z-index: 5;
+  }
+
+  &-left {
+    position: relative;
+    width: 50%;
+  }
+
+  &-right {
+    width: 50%;
+    & > div {
+      margin-top: 150px;
+    }
+  }
+
+  &-shape-blue {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 99px;
+    top: 68px;
+    border-radius: 50%;
+    background: map.get($colors, "darkblue4");
+  }
+
+  &-shape-green {
+    position: absolute;
+    width: 133px;
+    height: 133px;
+    left: 0px;
+    top: 1px;
+    border-radius: 50%;
+    background: map.get($colors, "limegreen3");
+  }
+
+  &-shape-yellow {
+    position: absolute;
+    width: 133px;
+    height: 133px;
+    right: 0px;
+    top: 1px;
+    border-radius: 50%;
+    background: map.get($colors, "yellow1");
+  }
+
+  &-shape-red {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 383px;
+    top: 43px;
+    border-radius: 50%;
+    background: map.get($alert, "danger");
+  }
+}
