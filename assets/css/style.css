@@ -1,9 +1,25 @@
-html {
+body {
   font-family: "Helvetica";
+}
+
+p {
+  margin: 0;
 }
 
 .navbar-collapse {
   justify-content: end !important;
+}
+
+.fonts-heading1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+.fonts-heading2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .colors-darkblue5 {
@@ -20,6 +36,21 @@ html {
 }
 .colors-darkblue1 {
   background-color: #cfd4ed;
+}
+.colors-limegreen5 {
+  background-color: #5cb85f;
+}
+.colors-limegreen4 {
+  background-color: #5cb85f;
+}
+.colors-limegreen3 {
+  background-color: #92d094;
+}
+.colors-limegreen2 {
+  background-color: #c9e7ca;
+}
+.colors-limegreen1 {
+  background-color: #def1df;
 }
 
 #hero {
@@ -50,16 +81,17 @@ html {
 .hero-img {
   position: absolute;
   z-index: 1;
-  right: -120px;
+  right: -100px;
   bottom: 40px;
 }
 
 #our-service {
+  margin: 60px 0px;
   background-color: #ffffff;
 }
 
 .service-item {
-  height: 428px;
+  height: 468px;
   padding: 60px 40px;
 }
 .service-img {
@@ -73,12 +105,18 @@ html {
 .service-left {
   position: relative;
   width: 50%;
+  height: 100%;
 }
 .service-right {
   width: 50%;
+  height: 100%;
 }
-.service-right > div {
-  margin-top: 150px;
+.service-right div ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.service-right div ul li {
+  margin-bottom: 10px;
 }
 .service-shape-blue {
   position: absolute;
@@ -117,4 +155,48 @@ html {
   background: #fa2c5a;
 }
 
-/*# sourceMappingURL=style.css.map */
+#whyus {
+  margin: 60px 0px;
+  background-color: #ffffff;
+}
+
+.card {
+  border-radius: 8px !important;
+  padding: 16px !important;
+}
+
+.banner-body {
+  padding: 60px 40px;
+}
+
+#faq {
+  margin: 60px 0px;
+  background-color: #ffffff;
+}
+
+.faq-left {
+  width: 50%;
+}
+.faq-right {
+  width: 50%;
+}
+.faq-collapse {
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.faq-collapse > card {
+  border-radius: 0px !important;
+  border-top: 0px !important;
+}
+
+.footer-item {
+  padding: 80px 0px;
+}
+.footer-item a {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.footer-item img {
+  margin-right: 10px;
+}/*# sourceMappingURL=style.css.map */
