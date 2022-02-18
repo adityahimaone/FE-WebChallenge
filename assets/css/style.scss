@@ -27,12 +27,31 @@ $background: (
   "white2": #f1f3ff,
 );
 
-html {
+body {
   font-family: $font-family;
+}
+
+p {
+  margin: 0;
 }
 
 .navbar-collapse {
   justify-content: end !important;
+}
+
+.fonts {
+  &-heading1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  &-heading2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .colors {
@@ -50,6 +69,21 @@ html {
   }
   &-darkblue1 {
     background-color: map.get($colors, "darkblue1");
+  }
+  &-limegreen5 {
+    background-color: map.get($colors, "limegreen5");
+  }
+  &-limegreen4 {
+    background-color: map.get($colors, "limegreen4");
+  }
+  &-limegreen3 {
+    background-color: map.get($colors, "limegreen3");
+  }
+  &-limegreen2 {
+    background-color: map.get($colors, "limegreen2");
+  }
+  &-limegreen1 {
+    background-color: map.get($colors, "limegreen1");
   }
 }
 
@@ -85,18 +119,19 @@ html {
   &-img {
     position: absolute;
     z-index: 1;
-    right: -120px;
+    right: -100px;
     bottom: 40px;
   }
 }
 
 #our-service {
+  margin: 60px 0px;
   background-color: map.get($background, "white1");
 }
 
 .service {
   &-item {
-    height: 428px;
+    height: 468px;
     padding: 60px 40px;
   }
 
@@ -112,12 +147,20 @@ html {
   &-left {
     position: relative;
     width: 50%;
+    height: 100%;
   }
 
   &-right {
     width: 50%;
-    & > div {
-      margin-top: 150px;
+    height: 100%;
+
+    div ul {
+      list-style-type: none;
+      padding: 0px;
+
+      li {
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -159,5 +202,58 @@ html {
     top: 43px;
     border-radius: 50%;
     background: map.get($alert, "danger");
+  }
+}
+
+#whyus {
+  margin: 60px 0px;
+  background-color: map.get($background, "white1");
+}
+
+.card {
+  border-radius: 8px !important;
+  padding: 16px !important;
+}
+
+.banner-body {
+  padding: 60px 40px;
+}
+
+#faq {
+  margin: 60px 0px;
+  background-color: map.get($background, "white1");
+}
+
+.faq {
+  &-left {
+    width: 50%;
+  }
+  &-right {
+    width: 50%;
+  }
+
+  &-collapse {
+    margin-top: -15px;
+    margin-bottom: 10px;
+
+    > card {
+      border-radius: 0px !important;
+      border-top: 0px !important;
+    }
+  }
+}
+
+.footer {
+  &-item {
+    padding: 80px 0px;
+    a {
+      color: black;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
   }
 }
