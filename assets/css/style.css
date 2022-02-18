@@ -1,0 +1,120 @@
+html {
+  font-family: "Helvetica";
+}
+
+.navbar-collapse {
+  justify-content: end !important;
+}
+
+.colors-darkblue5 {
+  background-color: #091b6f;
+}
+.colors-darkblue4 {
+  background-color: #0d28a6;
+}
+.colors-darkblue3 {
+  background-color: #091b6f;
+}
+.colors-darkblue2 {
+  background-color: #aeb7e1;
+}
+.colors-darkblue1 {
+  background-color: #cfd4ed;
+}
+
+#hero {
+  height: 504px;
+  background-color: #f1f3ff;
+}
+
+.hero-right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.hero-left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.hero-shape {
+  position: absolute;
+  width: 704px;
+  height: 243px;
+  right: -110px;
+  bottom: 0px;
+  background: #091b6f;
+  border-radius: 60px 0px 0px 0px;
+  z-index: 0;
+}
+.hero-img {
+  position: absolute;
+  z-index: 1;
+  right: -120px;
+  bottom: 40px;
+}
+
+#our-service {
+  background-color: #ffffff;
+}
+
+.service-item {
+  height: 428px;
+  padding: 60px 40px;
+}
+.service-img {
+  position: absolute;
+  width: 374px;
+  height: 366px;
+  left: 99px;
+  top: 0px;
+  z-index: 5;
+}
+.service-left {
+  position: relative;
+  width: 50%;
+}
+.service-right {
+  width: 50%;
+}
+.service-right > div {
+  margin-top: 150px;
+}
+.service-shape-blue {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  left: 99px;
+  top: 68px;
+  border-radius: 50%;
+  background: #0d28a6;
+}
+.service-shape-green {
+  position: absolute;
+  width: 133px;
+  height: 133px;
+  left: 0px;
+  top: 1px;
+  border-radius: 50%;
+  background: #92d094;
+}
+.service-shape-yellow {
+  position: absolute;
+  width: 133px;
+  height: 133px;
+  right: 0px;
+  top: 1px;
+  border-radius: 50%;
+  background: #f9cc00;
+}
+.service-shape-red {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 383px;
+  top: 43px;
+  border-radius: 50%;
+  background: #fa2c5a;
+}
+
+/*# sourceMappingURL=style.css.map */
