@@ -39,6 +39,21 @@ p {
   justify-content: end !important;
 }
 
+.navbar {
+  background-color: map.get($background, "white2");
+
+  li {
+    margin-right: 10px;
+    :last-child {
+      color: white;
+    }
+  }
+
+  .nav-link {
+    color: black !important;
+  }
+}
+
 .fonts {
   &-heading1 {
     font-style: normal;
@@ -51,6 +66,10 @@ p {
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
+  }
+
+  &-white {
+    color: white;
   }
 }
 
@@ -125,13 +144,13 @@ p {
 }
 
 #our-service {
-  margin: 60px 0px;
+  margin: 20px 0px;
   background-color: map.get($background, "white1");
 }
 
 .service {
   &-item {
-    height: 468px;
+    height: 500px;
     padding: 60px 40px;
   }
 
@@ -217,6 +236,7 @@ p {
 
 .banner-body {
   padding: 60px 40px;
+  border-radius: 10px;
 }
 
 #faq {
@@ -231,17 +251,26 @@ p {
   &-right {
     width: 50%;
   }
+}
 
-  &-collapse {
-    margin-top: -15px;
-    margin-bottom: 10px;
-
-    > card {
-      border-radius: 0px !important;
-      border-top: 0px !important;
+.accordion {
+  &-item {
+    border: {
+      style: none;
     }
+    margin: 20px 0px;
+    border-radius: 10px !important;
+    border: 2px solid #d4d4d4 !important;
+  }
+
+  &-button {
+    border-radius: 10px !important;
+    border: 0px solid #d4d4d4 !important;
   }
 }
+
+$accordion-border-radius: 0px !important;
+$accordion-inner-border-radius: 0px !important;
 
 .footer {
   &-item {
@@ -254,6 +283,146 @@ p {
 
     img {
       margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #hero {
+    height: 600px;
+    background-color: map.get($background, "white2");
+  }
+
+  .hero {
+    &-right {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-left {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-shape {
+      position: absolute;
+      width: 504px;
+      height: 143px;
+      right: -20px;
+      bottom: 0px;
+      background: map.get($colors, "darkblue5");
+      border-radius: 60px 0px 0px 0px;
+      z-index: 0;
+    }
+
+    &-img {
+      position: absolute;
+      z-index: 1;
+      width: 500px;
+      height: auto;
+      right: 0px;
+      bottom: 0px;
+    }
+  }
+
+  #our-service {
+    margin: 20px 0px;
+    background-color: map.get($background, "white1");
+  }
+
+  .service {
+    &-item {
+      height: 700px;
+      padding: 0px 20px;
+    }
+
+    &-img {
+      position: absolute;
+      width: 254px;
+      height: auto;
+      left: 99px;
+      top: 0px;
+      z-index: 5;
+    }
+
+    &-left {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-right {
+      width: 100%;
+      height: 100%;
+
+      div ul {
+        list-style-type: none;
+        padding: 0px;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &-shape-blue {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      left: 99px;
+      top: 68px;
+      border-radius: 50%;
+      background: map.get($colors, "darkblue4");
+    }
+
+    &-shape-green {
+      position: absolute;
+      width: 133px;
+      height: 133px;
+      left: 0px;
+      top: 1px;
+      border-radius: 50%;
+      background: map.get($colors, "limegreen3");
+    }
+
+    &-shape-yellow {
+      position: absolute;
+      width: 133px;
+      height: 133px;
+      right: 0px;
+      top: 1px;
+      border-radius: 50%;
+      background: map.get($colors, "yellow1");
+    }
+
+    &-shape-red {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 383px;
+      top: 43px;
+      border-radius: 50%;
+      background: map.get($alert, "danger");
+    }
+  }
+
+  .banner-body {
+    border-radius: 0px;
+  }
+
+  #faq {
+    margin: 30px 0px;
+    background-color: map.get($background, "white1");
+  }
+
+  .faq {
+    &-left {
+      width: 100%;
+    }
+    &-right {
+      width: 100%;
     }
   }
 }
