@@ -93,12 +93,14 @@ p {
   background: #091b6f;
   border-radius: 60px 0px 0px 0px;
   z-index: 0;
+  overflow: hidden;
 }
 .hero-img {
   position: absolute;
   z-index: 1;
   right: -100px;
   bottom: 40px;
+  overflow: hidden;
 }
 
 #our-service {
@@ -114,7 +116,7 @@ p {
   position: absolute;
   width: 374px;
   height: 366px;
-  left: 99px;
+  left: 92px;
   top: 0px;
   z-index: 5;
 }
@@ -142,6 +144,8 @@ p {
   top: 68px;
   border-radius: 50%;
   background: #0d28a6;
+  background-size: cover;
+  background-image: url(/assets/img/service_girl2.png);
 }
 .service-shape-green {
   position: absolute;
@@ -154,10 +158,10 @@ p {
 }
 .service-shape-yellow {
   position: absolute;
-  width: 133px;
-  height: 133px;
-  right: 0px;
-  top: 1px;
+  width: 48px;
+  height: 48px;
+  left: 60px;
+  top: 336px;
   border-radius: 50%;
   background: #f9cc00;
 }
@@ -184,6 +188,59 @@ p {
 .banner-body {
   padding: 60px 40px;
   border-radius: 10px;
+}
+
+#testimonial {
+  margin: 20px 0px;
+}
+
+.testimonial-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+.testimonial-card {
+  padding: 30px;
+  width: 619px;
+  height: 270px;
+  background-color: #f1f3ff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+.testimonial-card-avatar {
+  width: 60px;
+  height: 60px;
+}
+.testimonial-card-star {
+  width: 20px;
+  height: 20px;
+}
+
+.owl-nav {
+  display: block !important;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: solid 1px #000;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: #f1f3ff !important;
+  padding: 2 !important;
+  font: inherit;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: #5cb85f !important;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto !important;
 }
 
 #faq {
@@ -241,19 +298,21 @@ p {
     position: absolute;
     width: 504px;
     height: 143px;
-    right: -20px;
+    right: -10px;
     bottom: 0px;
     background: #091b6f;
     border-radius: 60px 0px 0px 0px;
     z-index: 0;
+    overflow: hidden;
   }
   .hero-img {
     position: absolute;
     z-index: 1;
     width: 500px;
     height: auto;
-    right: 0px;
+    right: -10px;
     bottom: 0px;
+    overflow: hidden;
   }
 
   #our-service {
@@ -267,10 +326,10 @@ p {
   }
   .service-img {
     position: absolute;
-    width: 254px;
+    width: 250px;
     height: auto;
     left: 99px;
-    top: 0px;
+    top: 20px;
     z-index: 5;
   }
   .service-left {
@@ -291,39 +350,45 @@ p {
   }
   .service-shape-blue {
     position: absolute;
-    width: 160px;
-    height: 160px;
+    width: 250px;
+    height: 250px;
     left: 99px;
     top: 68px;
     border-radius: 50%;
     background: #0d28a6;
+    overflow: hidden;
+    background-image: url(/assets/img/service_girl2.png);
+    background-size: cover;
   }
   .service-shape-green {
     position: absolute;
-    width: 133px;
-    height: 133px;
-    left: 0px;
-    top: 1px;
+    width: 73px;
+    height: 73px;
+    left: 40px;
+    top: 50px;
     border-radius: 50%;
     background: #92d094;
+    overflow: hidden;
   }
   .service-shape-yellow {
     position: absolute;
-    width: 133px;
-    height: 133px;
-    right: 0px;
-    top: 1px;
+    width: 38px;
+    height: 38px;
+    left: 70px;
+    top: 276px;
     border-radius: 50%;
     background: #f9cc00;
+    overflow: hidden;
   }
   .service-shape-red {
     position: absolute;
     width: 25px;
     height: 25px;
-    left: 383px;
+    left: 323px;
     top: 43px;
     border-radius: 50%;
     background: #fa2c5a;
+    overflow: hidden;
   }
 
   .banner-body {
@@ -340,5 +405,26 @@ p {
   }
   .faq-right {
     width: 100%;
+  }
+
+  .testimonial-carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  .testimonial-card {
+    padding: 30px;
+    width: 419px;
+    height: 270px;
+    background-color: #f1f3ff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  }
+  .testimonial-card-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .testimonial-card-star {
+    width: 15px;
+    height: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
