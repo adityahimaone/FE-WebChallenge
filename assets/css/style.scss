@@ -35,6 +35,8 @@ p {
   margin: 0;
 }
 
+/*! Navbar overide bootsrap  */
+
 .navbar-collapse {
   justify-content: end !important;
 }
@@ -44,8 +46,22 @@ p {
 
   li {
     margin-right: 10px;
-    :last-child {
-      color: white;
+
+    a:hover {
+      padding: 5px;
+      border-bottom: 3px solid map.get($colors, "limegreen5");
+    }
+
+    &:last-child {
+      a {
+        color: white !important;
+        width: max-content;
+
+        &:hover {
+          padding: 0px;
+          border-bottom: 0px solid map.get($colors, "limegreen5");
+        }
+      }
     }
   }
 
@@ -53,6 +69,8 @@ p {
     color: black !important;
   }
 }
+
+/*! Font Custom */
 
 .fonts {
   &-heading1 {
@@ -72,6 +90,8 @@ p {
     color: white;
   }
 }
+
+/*! Colors Custom  */
 
 .colors {
   &-darkblue5 {
@@ -105,6 +125,8 @@ p {
     background-color: map.get($colors, "limegreen1");
   }
 }
+
+/*! Section Hero */
 
 #hero {
   height: 504px;
@@ -144,6 +166,8 @@ p {
     overflow: hidden;
   }
 }
+
+/*! Section Service */
 
 #our-service {
   margin: 20px 0px;
@@ -228,6 +252,8 @@ p {
   }
 }
 
+/*! Section Whyus */
+
 #whyus {
   margin: 60px 0px;
   background-color: map.get($background, "white1");
@@ -236,6 +262,11 @@ p {
 .card {
   border-radius: 8px !important;
   padding: 16px !important;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  }
 }
 
 .banner-body {
@@ -273,6 +304,8 @@ p {
 //   right: 930px;
 // }
 
+/*! Section Testimonial */
+
 #testimonial {
   margin: 20px 0px;
 }
@@ -302,6 +335,8 @@ p {
   }
 }
 
+/*! Caroussel Custom */
+
 .owl-nav {
   display: block !important;
 }
@@ -329,6 +364,8 @@ p {
   display: block;
   width: auto !important;
 }
+
+/*! Section Faq */
 
 #faq {
   margin: 60px 0px;
@@ -360,6 +397,8 @@ p {
   }
 }
 
+/*! Footer */
+
 .footer {
   &-item {
     padding: 80px 0px;
@@ -369,11 +408,18 @@ p {
       margin-bottom: 10px;
     }
 
+    a:hover {
+      color: map.get($colors, "darkblue5");
+      text-decoration: underline;
+    }
+
     img {
       margin-right: 10px;
     }
   }
 }
+
+/*! Media Query */
 
 @media screen and (max-width: 992px) {
   #hero {
