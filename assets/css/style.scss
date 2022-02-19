@@ -470,15 +470,16 @@ p {
 
   .service {
     &-item {
-      height: 700px;
+      height: 850px;
       padding: 0px 20px;
+      overflow: hidden;
     }
 
     &-img {
       position: absolute;
       width: 250px;
       height: auto;
-      left: 99px;
+      left: 70px;
       top: 20px;
       z-index: 5;
     }
@@ -507,7 +508,7 @@ p {
       position: absolute;
       width: 250px;
       height: 250px;
-      left: 99px;
+      left: 70px;
       top: 68px;
       border-radius: 50%;
       background: map.get($colors, "darkblue4");
@@ -520,7 +521,7 @@ p {
       position: absolute;
       width: 73px;
       height: 73px;
-      left: 40px;
+      left: 30px;
       top: 50px;
       border-radius: 50%;
       background: map.get($colors, "limegreen3");
@@ -531,7 +532,7 @@ p {
       position: absolute;
       width: 38px;
       height: 38px;
-      left: 70px;
+      left: 50px;
       top: 276px;
       border-radius: 50%;
       background: map.get($colors, "yellow1");
@@ -542,7 +543,7 @@ p {
       position: absolute;
       width: 25px;
       height: 25px;
-      left: 323px;
+      left: 290px;
       top: 43px;
       border-radius: 50%;
       background: map.get($alert, "danger");
