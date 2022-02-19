@@ -6,6 +6,7 @@ p {
   margin: 0;
 }
 
+/*! Navbar overide bootsrap  */
 .navbar-collapse {
   justify-content: end !important;
 }
@@ -16,13 +17,25 @@ p {
 .navbar li {
   margin-right: 10px;
 }
-.navbar li :last-child {
-  color: white;
+.navbar li a:hover {
+  padding: 5px;
+  border-bottom: 3px solid #5cb85f;
+}
+.navbar li:last-child a {
+  color: white !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.navbar li:last-child a:hover {
+  padding: 0px;
+  border-bottom: 0px solid #5cb85f;
 }
 .navbar .nav-link {
   color: black !important;
 }
 
+/*! Font Custom */
 .fonts-heading1 {
   font-style: normal;
   font-weight: bold;
@@ -38,6 +51,7 @@ p {
   color: white;
 }
 
+/*! Colors Custom  */
 .colors-darkblue5 {
   background-color: #091b6f;
 }
@@ -69,6 +83,7 @@ p {
   background-color: #def1df;
 }
 
+/*! Section Hero */
 #hero {
   height: 504px;
   background-color: #f1f3ff;
@@ -103,6 +118,7 @@ p {
   overflow: hidden;
 }
 
+/*! Section Service */
 #our-service {
   margin: 20px 0px;
   background-color: #ffffff;
@@ -175,6 +191,7 @@ p {
   background: #fa2c5a;
 }
 
+/*! Section Whyus */
 #whyus {
   margin: 60px 0px;
   background-color: #ffffff;
@@ -184,12 +201,17 @@ p {
   border-radius: 8px !important;
   padding: 16px !important;
 }
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
 
 .banner-body {
   padding: 60px 40px;
   border-radius: 10px;
 }
 
+/*! Section Testimonial */
 #testimonial {
   margin: 20px 0px;
 }
@@ -215,6 +237,7 @@ p {
   height: 20px;
 }
 
+/*! Caroussel Custom */
 .owl-nav {
   display: block !important;
 }
@@ -243,6 +266,7 @@ p {
   width: auto !important;
 }
 
+/*! Section Faq */
 #faq {
   margin: 60px 0px;
   background-color: #ffffff;
@@ -266,6 +290,7 @@ p {
   border: 0px solid #d4d4d4 !important;
 }
 
+/*! Footer */
 .footer-item {
   padding: 80px 0px;
 }
@@ -274,10 +299,15 @@ p {
   text-decoration: none;
   margin-bottom: 10px;
 }
+.footer-item a:hover {
+  color: #091b6f;
+  text-decoration: underline;
+}
 .footer-item img {
   margin-right: 10px;
 }
 
+/*! Media Query */
 @media screen and (max-width: 992px) {
   #hero {
     height: 600px;
