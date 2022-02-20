@@ -131,6 +131,7 @@ p {
 #hero {
   height: 504px;
   background-color: map.get($background, "white2");
+  overflow: hidden;
 }
 
 .hero {
@@ -144,24 +145,27 @@ p {
     position: relative;
     width: 50%;
     height: 100%;
+    overflow: hidden;
   }
 
   &-shape {
     position: absolute;
-    width: 704px;
-    height: 243px;
-    right: -110px;
+    max-width: 800px;
+    width: 50vw;
+    height: 20vw;
+    right: -10vw;
     bottom: 0px;
-    background: map.get($colors, "darkblue5");
+    background: map.get($colors, "darkblue4");
     border-radius: 60px 0px 0px 0px;
     z-index: 0;
-    overflow: hidden;
   }
 
   &-img {
     position: absolute;
     z-index: 1;
-    right: -100px;
+    // width: 45vw;
+    // height: auto;
+    right: -5vw;
     bottom: 40px;
     overflow: hidden;
   }
@@ -425,6 +429,7 @@ p {
   #hero {
     height: 600px;
     background-color: map.get($background, "white2");
+    overflow: hidden;
   }
 
   .hero {
@@ -446,7 +451,7 @@ p {
       height: 143px;
       right: -10px;
       bottom: 0px;
-      background: map.get($colors, "darkblue5");
+      background: map.get($colors, "darkblue4");
       border-radius: 60px 0px 0px 0px;
       z-index: 0;
       overflow: hidden;
