@@ -222,7 +222,7 @@ p {
     border-radius: 50%;
     background: map.get($colors, "darkblue4");
     background-size: cover;
-    background-image: url(/assets/img/service_girl2.png);
+    background-image: url(../img/service_girl2.png);
   }
 
   &-shape-green {
@@ -518,7 +518,7 @@ p {
       border-radius: 50%;
       background: map.get($colors, "darkblue4");
       overflow: hidden;
-      background-image: url(/assets/img/service_girl2.png);
+      background-image: url(../img/service_girl2.png);
       background-size: cover;
     }
 

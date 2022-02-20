@@ -163,7 +163,7 @@ p {
   border-radius: 50%;
   background: #0d28a6;
   background-size: cover;
-  background-image: url(/assets/img/service_girl2.png);
+  background-image: url(../img/service_girl2.png);
 }
 .service-shape-green {
   position: absolute;
@@ -391,7 +391,7 @@ p {
     border-radius: 50%;
     background: #0d28a6;
     overflow: hidden;
-    background-image: url(/assets/img/service_girl2.png);
+    background-image: url(../img/service_girl2.png);
     background-size: cover;
   }
   .service-shape-green {
