@@ -132,7 +132,7 @@ p {
 
 .service-item {
   height: 550px;
-  padding: 0px 40px;
+  padding: 20px 40px;
 }
 .service-img {
   position: relative;
@@ -345,13 +345,15 @@ p {
   }
 
   #our-service {
-    margin: 20px 0px;
+    margin: 40px 0px;
     background-color: #ffffff;
   }
 
   .service-item {
-    height: 850px;
-    padding: 0px 20px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px 20px;
     overflow: hidden;
   }
   .service-left {
